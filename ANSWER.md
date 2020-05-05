@@ -1,15 +1,24 @@
 # 1.
+# Qu'est-ce qu'une instance Virtual Machine ?
+Une machine virtuelle est un fichier informatique, généralement appelé image, qui se comporte comme un ordinateur réel. En d’autres termes, il s’agit d’un ordinateur créé à l’intérieur d’un ordinateur. Elle s’exécute dans une fenêtre, comme tout autre programme, en offrant à l’utilisateur final une expérience identique à celle qu’il aurait sur le système d’exploitation hôte.
 Qu'est-ce qu'une instance Virtual Machine ?
 
 
 # 2.
-Qu'est-ce qu'un VNET ?
+# Qu'est-ce qu'un VNET ?
 Le réseau virtuel Azure (VNet) est le bloc de construction fondamental pour votre réseau privé dans Azure. Le réseau virtuel permet à de nombreux types de ressources Azure, telles que les machines virtuelles (VM) Azure, de communiquer de manière sécurisée entre elles, avec Internet et avec les réseaux locaux. Un réseau virtuel est similaire à un réseau traditionnel que vous utiliseriez dans votre propre centre de données, mais avec les avantages supplémentaires de l’infrastructure Azure, tels que la mise à l’échelle, la disponibilité et l’isolation.
 
 # 3.
-A quoi sert un NSG ?
+# A quoi sert un NSG ?
+Secteurs d'utilisation d'un NSG :
+- Cartes réseaux/serveurs
+- Base de données
+- Passerelle VPN
+- Sous réseau
+- Tag/balise 
 
 # 4.
+# Quelles sont les 5 propriétés désirables du cloud ?
 - Accès aux services par l’utilisateur à la demande :
 La mise en œuvre des systèmes est entièrement automatisée et c’est l’utilisateur, au moyen d’une console de commande, qui met en place et gère la configuration à distance.
 
@@ -27,6 +36,7 @@ Il n’y a généralement pas de coût de mise en service (c’est l’utilisate
 
 # 5.
 # Qu'est-ce que l'A/B Testing ?
+L’A/B Testing est une technique qui consiste à mettre en comparaison deux versions d’une page web, d’une application, d’un e-mail ou même d’un formulaire, afin d’analyser les résultats et déterminer la version la plus performante selon l’objectif souhaité.
 
 # 6.
 # Comment programmer le cloud ?
@@ -35,6 +45,11 @@ Souvent plébiscité dans le cadre du cloud computing, l'Infrastructure as Code 
 
 # 7.
 # Quelle est la technique pour faire un déploiement sans interruption de service ?
+Tout d'abord en isolant les machines de productions mais aussi en :
+- découpant les versions en un plus grand nombre de livraisons de moindre taille et moins complexes à tester,
+- automatisant au maximum les étapes de tests et passages en production d’une nouvelle version afin de réduire les cycles,
+- permettant un déploiement très régulier des nouveautés.
+2 modèles de déploiement utilisent ces techniques : Canary et Blue/Green.
 
 # 8.
 # Qu'est-ce que le Canary release ?
@@ -42,6 +57,9 @@ Le canary release est un pattern qui permet de faire tester les dernières modif
 
 # 9.
 # Comment changer de taille de machine virtuelle ?
+Après avoir cloner notre machine virtuelle, on pourra effectuer ces deux lignes de commandes : 
+- cd C:\Program Files\Oracle\VirtualBox\
+- VBoxManage.exe modifyhd C:\Users\Le Crabe\VirtualBox VMs\mv-csalledechou\:d.vdi --resize 256000 pour 256Go.
 
 # 10.
 # Qu'est-ce que le Blue/Green deployment ?
@@ -50,6 +68,9 @@ Le principe de l’exposition progressive est assez simple : la nouvelle version
 
 # 11.
 # Citez deux avantages du PaaS sur le IaaS ?
+- Le développement et le fonctionnement des applications peut se faire sans aucune préoccupation pour les mises à jour de la plateforme et des logiciels qui fonctionnent dessus, qui sont entièrement pris en charge par le prestataire.
+- L’accès à la plateforme se fait directement par navigateur Web sans installation d’un plug-in. L’exécution de l’application s’effectue sur la même plateforme, fournie à distance et par le biais d’une interface Web par votre hébergeur.
+Citez deux avantages du PaaS sur le IaaS ?
 
 # 12.
 # Quelle est la différence entre le PaaS et le Serverless ?
@@ -57,6 +78,7 @@ Les principales différences entre le PaaS et le Serverless sont l'évolutivité
 
 # 13.
 # Que veut dire Serverless ?
+Le serverless computing est un paradigme de cloud computing dans lequel le fournisseur de serveur gère dynamiquement les ressources allouées au service client.
 
 # 14.
 #  les trois propriétés désirable du Serverless ?
