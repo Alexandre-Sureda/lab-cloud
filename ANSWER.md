@@ -74,3 +74,4 @@ La facturation Serverless est extrêmement précise et les développeurs ne paie
 Le temps de lancement des applications Serverless est très rapide.
 
 # 15. Comment s'appelle la plus petite unité de compute déployable en Serverless ?
+La plus petite unité de compute déployable en Serverless est une fonction (programme informatique)
